@@ -4,9 +4,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import {
   Server, Layout, Database, Container,
-  Code2, Blocks, Globe, GitBranch, Cpu, FileCode, Braces, Terminal,
+  Code2, Blocks, Globe, GitBranch, FileCode, Braces, Terminal,
   Smartphone, Cloud, Wrench, Layers, Network, MessageSquare, ShieldCheck
 } from "lucide-react";
+
 
 const skillGroups = [
   {

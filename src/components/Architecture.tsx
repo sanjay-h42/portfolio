@@ -9,6 +9,7 @@ import {
 
 
 
+
 // Helper for rendering a flat architecture node
 interface NodeProps {
     icon: React.ElementType;

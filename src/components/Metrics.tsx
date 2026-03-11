@@ -4,6 +4,16 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { Users, Zap, Container, BarChart3 } from "lucide-react";
 
+interface Metric {
+    icon: React.ReactNode;
+    value: number;
+    suffix: string;
+    label: string;
+    description: string;
+    gradient: string;
+    shadow: string;
+}
+
 const metrics = [
     {
         icon: <Users className="w-8 h-8" />,
@@ -71,7 +81,7 @@ function AnimatedCounter({ target, suffix, inView }: { target: number; suffix: s
     );
 }
 
-function MetricCard({ metric, index, isInView }: { metric: any, index: number, isInView: boolean }) {
+function MetricCard({ metric, index, isInView }: { metric: Metric, index: number, isInView: boolean }) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
